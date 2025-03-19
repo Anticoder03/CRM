@@ -1,0 +1,127 @@
+/* styles.css */
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a.scroll-to-top {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 24px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar-brand:hover {
+    color: #0056b3 !important;
+}
+
+.nav-link {
+    color: #6c757d !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Page Title Animations */
+.animate__animated.animate__fadeInDown {
+    animation: fadeInDown 0.8s ease;
+}
+
+.animate__animated.animate__fadeInUp {
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
