@@ -33,7 +33,7 @@ if (isset($_POST['send_email'])) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'ap5381545@gmail.com';
-        $mail->Password = 'TOUR-APP-PASSWORD'; // Use App Password
+        $mail->Password = 'YOUR-APP-PASSWORD'; // Use App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
